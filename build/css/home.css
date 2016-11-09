@@ -1051,8 +1051,7 @@ header .menu-mob {
       cursor: pointer; }
   .portfolio .cats .active {
     background: #7beec7;
-    color: #fff;
-    padding: 5px 25px; }
+    color: #fff; }
 
 .portfolio .wrap {
   position: relative;
