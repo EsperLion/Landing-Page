@@ -1,0 +1,192 @@
+.about {
+  h3 { 
+    @include h3line();
+    @include tablet {
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  h4 {
+    color: $font_color;
+    font-size: 14px;
+    font-family: "Montserrat Bold";
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 25px;
+    @include tablet {
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+  p {
+    line-height: 30px;
+  }
+}
+
+.benefits {
+  .header {
+    h3 {
+      @include h3line();
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 100px;
+    }
+  }
+  .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .item {
+      width: 33%;
+      margin-bottom: 50px;
+      @include tablet { width: 40%; }
+      @include mobile { width: 65%; }
+      .mini-h {
+        @include clearfix();
+        margin-bottom: 22px;
+        .img {
+          width: 40px;
+          height: 40px;
+          float: left;
+          background-size: containt;
+          margin-right: 18px;
+        }
+        h4 {
+          font-size: 18px;
+          line-height: 40px;
+          color: $font_color;
+          font-family: "Montserrat Bold";
+          width: fit-content;
+          float: left;
+          margin: 0;
+          text-transform: uppercase;
+        }
+      }
+      p{ line-height: 28px; }
+    }
+    .resp { .img {background: url('../../img/benefits/resp.png');} }
+    .uopt { .img {background: url('../../img/benefits/uop.png');} }
+    .wp { .img {background: url('../../img/benefits/wp.png');} }
+    .e-comm { .img {background: url('../../img/benefits/e-comm.png');} }
+    .des { .img {background: url('../../img/benefits/design.png');} }
+    .sup { .img {background: url('../../img/benefits/supp.png');} }
+  }
+}
+
+.team {
+  .header {
+    h3 {
+      @include h3line();
+      width: fit-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    p {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 100px;
+    }
+  }
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 0 10px $font_color; 
+  }
+  .more {
+    background: #efeff0;
+    padding: 50px 30px;
+    @include clearfix();
+    p{
+      float: left;
+      width: fit-content;
+      line-height: 50px;
+      font-style: italic;
+    }
+    .read-more {
+      @include button();
+      float: right;
+    }
+  }
+}
+.staff {
+  .carousel-indicators {
+    margin-bottom: 0;
+    margin-top: 0;
+    li {
+      border-radius: 0;
+      background: $font_color;
+      width: 15px;
+      height: 5px;
+      border: none;
+      margin: 0;
+      -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+    }
+    .active {
+      width: 30px;
+      background: $blocks_color;
+      margin: 0;
+    }
+  }
+  .item {
+    padding: 0 0 50px;
+    .foto {
+      width: 82px;
+      height: 82px;
+      border-radius: 50%;
+      box-shadow: inset 0 0 10px $font_color;
+      background: $font_color - 30;
+      margin: 0 auto 28px;
+      opacity: 0.5;
+    }
+
+    p {
+      text-align: center;
+      margin: 0 0 28px;
+    }
+    .name {
+      position: relative;
+      color: #fff;
+      background: $blocks_color;
+      padding: 0 25px;
+      line-height: 30px;
+      width: fit-content;
+      margin: 0 auto;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-family: "Montserrat Bold";
+      cursor: pointer;
+    }  
+  }
+  .flex-container {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    .item {
+      width: 165px;
+      height: 100px;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+    .item1 {background: url('../../img/clients/c1.png') no-repeat center;}
+    .item2 {background: url('../../img/clients/c3.png') no-repeat center;}
+    .item3 {background: url('../../img/clients/c2.png') no-repeat center;}
+    .item4 {background: url('../../img/clients/c1.png') no-repeat center;}
+    .item5 {background: url('../../img/clients/c2.png') no-repeat center;}
+    .item6 {background: url('../../img/clients/c3.png') no-repeat center;}
+  }
+}

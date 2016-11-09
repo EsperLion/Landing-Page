@@ -1,0 +1,404 @@
+@import 'variables';
+@import 'mixin';
+@import 'base';
+
+@import 'service';
+@import 'about';
+@import 'blog';
+
+header {
+  .logo {
+    position: relative;
+    line-height: 100px;
+    font-family: "Montserrat Bold";
+    font-size: 18px;
+    text-transform: uppercase;
+    color: $font_color;
+  }
+
+  .menu-desk {
+    position: relative;
+    width: 100%;
+    .items {
+      list-style-type: none;
+      position: absolute;
+      right: 0;
+      margin: 0;
+      padding: 0;
+      @include clearfix();
+      .item {
+        position: relative;
+        float: left;
+        line-height: 100px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: "Montserrat";
+        margin: 0 10px;
+      }
+    }
+  }
+
+  .menu-mob {
+    position: absolute;
+    overflow: hidden;
+    width: 150px;
+    height: 100px;
+    right: 0;
+    -webkit-transition: height 0.5s ease-out;
+     -moz-transition: height 0.5s ease-out;
+     -o-transition: height 0.5s ease-out;
+     transition: height 0.5s ease-out;
+    .mob-menu-img {
+      position: absolute;
+      right: 0;
+      width: 40px;
+      height: 40px;
+      margin: 30px;
+      background: url('../../img/mob-menu-btn.png') no-repeat center;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    .items {
+      list-style-type: none;
+      position: absolute;
+      display: block;
+      top: 100px;
+      padding: 0;
+      z-index: 10;
+      .item {
+        background: rgba(123, 238, 199, 0.9);
+        line-height: 30px;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: "Montserrat";
+        text-align: right;
+        padding: 0 20px;
+        &:hover {
+          cursor: pointer;
+          background: rgba(110, 220, 180, 0.9);
+        }
+      }
+    }
+  }
+}
+
+.we-are {
+  margin-top: 125px;
+  @include tablet {margin-top: 55px}
+  @include mobile {margin-top: 25px}
+  h4 {
+    postion: relative;
+    width: 100px;
+    color: $font_color;
+    font-size: 18px;
+    font-family: "Montserrat Bold";
+    margin: 0 auto;
+    background: $blocks_color;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  h2 {
+    position: relative;
+    width: 100%;
+    color: $font_color;
+    font-family: "Montserrat Bold";
+    font-size: 48px;
+    border: 10px solid $font_color;
+    box-sizing: border-box;
+    line-height: 100px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 30px;
+  }
+}
+
+.history {
+  margin-top: 125px;
+  .image {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background: url('../../img/history.jpg') no-repeat center;
+    background-size: cover;
+    box-shadow: 0 0 10px $font_color;
+  }
+
+  h3{
+    margin-top: 30px;
+    @include h3line();
+    @include tablet {
+      width: fit-content;
+      text-align: center;
+      margin: 30px auto;
+    }
+  }
+
+  .read-more {
+    @include button();
+    margin-top: 58px;
+    float: right;
+  }
+}
+
+.choose-us {
+  h3{
+    @include h3line();
+    width: fit-content;
+    margin: 0 auto;
+  }
+
+  h3, p {
+    text-align: center;
+  }
+
+  p {
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+
+  .list {
+    position: relative;
+    width: 50%;
+    float: left;
+
+    .option {
+      @include icon_img('../../img/inf.png');
+    }
+    .design {
+      @include icon_img('../../img/arr.png');
+    }
+    .e-comm {
+      @include icon_img('../../img/cab.png');
+    }
+    .custom {
+      @include icon_img('../../img/sli.png');
+    }
+
+    h4 {
+      margin: 0;
+      font-family: "Montserrat Bold";
+      font-size: 18px;
+      line-height: 20px;
+      text-transform: uppercase;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 26px;
+      margin-bottom: 36px;
+
+      li {
+        font-family: "Montserrat Light";
+        font-size: 14px;
+        text-transform: uppercase;
+        line-height: 26px;
+        color: $font_color
+      }
+    }
+  }
+
+  .image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background: url('../../img/choose.jpg') no-repeat center;
+    background-size: cover;
+    box-shadow: 0 0 10px $font_color;
+  }
+}
+
+.portfolio {
+  .header {
+    h3 {
+      margin: 0 auto;
+      width: fit-content;
+      @include h3line();
+    }
+
+    p {
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 100px;
+    }
+  }
+  h3 {
+    @include tablet {text-align: center;}
+  }
+
+  .cats {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 26px;
+    .cat-item {
+      font-family: "Montserrat Bold";
+      font-size: 14px;
+      line-height: 22px;
+      padding: 0 20px;
+      color: $font_color;
+      width: fit-content;
+      text-transform: uppercase;
+      margin-bottom: 30px;
+
+      -webkit-transition: all 0.5s ease-out;
+      -moz-transition: all 0.5s ease-out;
+      -o-transition: all 0.5s ease-out;
+      transition: all 0.5s ease-out;
+      @include tablet{float:left;}
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+    .active {
+      background: $blocks_color;
+      color: #fff;
+      padding: 5px 25px;
+    }
+  }
+  
+  .wrap {
+    position: relative;
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    .col {
+      position: relative;
+      width: 33%;
+      height: auto;
+      img {
+        margin: 10px auto;
+        position: relative;
+        width: 100%;
+        height: auto;
+      }
+      .show {
+        animation: show 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+.form {
+  position: relative;
+  background: $blocks_color;
+  padding: 50px 0;
+  box-sizing: border-box;
+  
+  h3 {
+    color: #fff;
+  }
+
+  button {
+    @include button(#fff, $blocks_color);
+    margin-bottom: 30px;
+  }
+
+  .informed {
+    background: #fff;
+    padding: 20px 25px;
+    box-sizing: border-box;
+    h3 {
+      color: $font_color;
+    }
+    form{
+      @include clearfix();
+      margin-top: 30px;
+      input {
+        color: $font_color;
+        height: 50px;
+        line-height: 50px;
+        font-family: "Montserrat Bold";
+        text-indent: 2em;
+        width:75%;
+        @include laptop {width: 65%;}
+        @include tablet {width: 100%;}
+      }
+
+      button {
+        @include button();
+        @include tablet {
+          margin-top: 30px;
+          float: right;
+        }
+      }
+    }
+  }
+}
+
+footer {
+  padding: 50px 0 65px;
+  .menu-desk {
+    position: relative;
+    width: 100%;
+    @include clearfix();
+    @include tablet {
+      width: fit-content;
+      margin: 0 auto;
+    }
+    .items {
+      list-style-type: none;
+      position: relative;
+      margin: 0;
+      padding: 0;
+      .item {
+        position: relative;
+        float: left;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: "Montserrat";
+        margin: 0 10px;
+      }
+    }
+  }
+
+  p {
+    text-align: right;
+    margin-bottom: 25px;
+    @include tablet {
+      text-align: center;
+      margin: 30px 0;
+    }
+  }
+  .icon-wrap{
+    @include clearfix();
+    @include tablet {
+      width: fit-content;
+      margin: 0 auto;
+    }
+    a {
+      position: relative;
+      display: block;
+      float: right;
+    }
+    .icon {
+      width: 16px;
+      height: 16px;
+      background-size: contain;
+      margin: 10px;
+      opacity: 0.6;
+      &:hover {
+        // box-shadow: 0 0 10px #000;
+        opacity: 1;
+      }
+    }
+    .icon-1 {background: url('../../img/social-006_facebook.png') no-repeat center;}
+    .icon-2 {background: url('../../img/social-003_twitter.png') no-repeat center;}
+    .icon-3 {background: url('../../img/social-018_youtube.png') no-repeat center;}
+    .icon-4 {background: url('../../img/social-011_linkedin.png') no-repeat center;}
+    .icon-5 {background: url('../../img/social-033-round_pinterest.png') no-repeat center;}
+    .icon-6 {background: url('../../img/social-038_instagram.png') no-repeat center;}
+  }
+}

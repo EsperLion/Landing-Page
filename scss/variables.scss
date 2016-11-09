@@ -1,0 +1,35 @@
+// variables
+$font_color: #60606e;
+$blocks_color: #7beec7;
+
+$h3Size: 30px;
+
+$laptop: 1199px;
+$tablet: 991px;
+$mobile: 767px;
+
+// fonts
+@font-face {
+  font-family: "Montserrat Bold";
+  src: url('../../fonts/Montserrat-Bold_0.ttf');
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url('../../fonts/Montserrat-Regular_0.ttf');
+}
+
+@font-face {
+  font-family: "Montserrat Light";
+  src: url('../../fonts/Montserrat-Light.ttf');
+}
+
+//animation
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

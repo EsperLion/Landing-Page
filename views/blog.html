@@ -1,0 +1,111 @@
+<div class="head-bg-sub"></div>
+
+<section class="title">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-sm-12 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-4">
+        <h2>
+          blog
+        </h2>
+        <h4>
+          home/blog
+        </h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="articles">
+  <div class="container">
+    <div class="row">
+          <div class="col-lg-3 col-lg-offset-1 col-lg-push-8">
+        <form class="block">
+          <input type="search" name="search" placeholder="SEARCH...">
+          <div class="search-icon"></div>
+        </form>
+        <div class="block posts" data-ng-init="orderField = 'date';comms = false;">
+          <h4>POsts</h4>
+          <ul class="cats">
+            <li data-ng-class="orderField == 'date' && !comms ? 'active' : ''"
+                data-ng-click="orderField = 'date'; comms = false">Latest</li>
+            <li data-ng-class="orderField == 'likes' ? 'active' : ''"
+                data-ng-click="orderField = 'likes'; comms = false">Popular</li>
+            <li data-ng-class="orderField == 'date' && comms ? 'active' : ''"
+                data-ng-click="orderField = 'date'; comms = true">Comments</li>
+          </ul>
+          <div class="mini-post" 
+                data-ng-if="!comms"
+                data-ng-repeat="post in blogCtrl.posts 
+                | customOrderBy : orderField : true
+                | limitTo: 3 : 0">
+            <div class="img"></div>
+            <div class="info">
+              <h4>{{post.header}}</h4>
+              <p>{{post.date}}</p>
+            </div>
+          </div>
+          <div class="comms"  
+                data-ng-if="comms"
+                data-ng-repeat="comm in blogCtrl.comments 
+                | customOrderBy : orderField : true 
+                | limitTo: 3 : 0">
+            <h4>{{blogCtrl.posts[comm.post_id].header}}</h4>
+            <p>{{comm.text}}</hp>
+            <p>{{comm.date}}</p>
+          </div>
+        </div>
+        
+        <div class="block cats">
+          <h4>catagories</h4>
+          <ul class="items" data-ng-init="catNums = []">
+            <li data-ng-repeat="cat in blogCtrl.cats"
+                data-ng-click="blogCtrl.chooseCat(cat)"
+                data-ng-class="blogCtrl.activeCat == cat ? 'active' : cat == 'ALL' && blogCtrl.activeCat == '' ? 'active' : '' ;">
+              <p class="text">{{cat}}</p>
+              <p class="num" 
+                  data-ng-init="catNums[$index] = blogCtrl.checkNum(cat)">{{catNums[$index]}}</p>
+            </li>
+          </ul>
+        </div>
+        
+        <div class="block tags">
+        <h4>tags</h4>
+          <div class="tag" data-ng-repeat="tag in blogCtrl.tags"
+                data-ng-init="active = false"
+                data-ng-click="blogCtrl.tagClick(tag); active = !active;"
+                data-ng-class="active ? 'active' : ''">
+            {{tag}}
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-8 col-lg-pull-4">
+        <div class="article" 
+            data-ng-repeat="post in blogCtrl.posts | 
+            filter: blogCtrl.activeCat"
+            data-ng-if="blogCtrl.show(post.category, post.tags)">
+          <div class="img"></div>
+          <div class="info">
+            <div class="date">{{post.date}}</div>
+            <div class="comments" data-ng-hide="post.comments == 0">
+              <div class="icon"></div>
+              <div class="nums">{{post.comments}}</div>
+            </div>
+            <div class="likes" data-ng-hide="post.likes == 0">
+              <div class="icon"></div>
+              <div class="nums" >{{post.likes}}</div>
+            </div>
+          </div>
+          <div class="tags-list">
+            <div class="tag" data-ng-repeat="tag in post.tags">
+              {{tag}}
+            </div>
+          </div>
+          <h4>{{post.header}}</h3>
+          <p>{{post.text}}</p>
+          <a href="">continue reading...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
