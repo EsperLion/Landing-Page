@@ -106,4 +106,18 @@
       @include button();
     }
   }
+  h3 {
+    margin-top: 30px;
+  }
+
+  .comms {
+    position: relative;
+    border-bottom: 1px solid $font_color;
+    h4 {
+      margin: 15px 0 8px;
+    }
+    p {
+      font-size: 12px;
+    }
+  }
 }
