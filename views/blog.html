@@ -18,7 +18,7 @@
 <section class="articles">
   <div class="container">
     <div class="row">
-          <div class="col-lg-3 col-lg-offset-1 col-lg-push-8">
+          <div class="col-md-3 col-lg-3 col-lg-offset-1 col-md-offset-1 col-lg-push-8 col-md-push-8">
         <form class="block">
           <input type="search" name="search" placeholder="SEARCH...">
           <div class="search-icon"></div>
@@ -79,7 +79,7 @@
         </div>
       </div>
 
-      <div class="col-lg-8 col-lg-pull-4">
+      <div class="col-md-8 col-lg-8 col-lg-pull-4 col-md-pull-4">
         <div class="article" 
             data-ng-repeat="post in blogCtrl.posts | 
             filter: blogCtrl.activeCat"
@@ -91,7 +91,8 @@
               <div class="icon"></div>
               <div class="nums">{{post.comments}}</div>
             </div>
-            <div class="likes" data-ng-hide="post.likes == 0">
+            <div class="likes" data-ng-hide="post.likes == 0"
+                  data-ng-click="blogCtrl.likePost(post)">
               <div class="icon"></div>
               <div class="nums" >{{post.likes}}</div>
             </div>
@@ -103,7 +104,8 @@
           </div>
           <h4>{{post.header}}</h3>
           <p>{{post.text}}</p>
-          <a href="">continue reading...</a>
+          <a href="#post" 
+              data-ng-click="mainCtrl.openPost(post)">continue reading...</a>
         </div>
       </div>
     </div>

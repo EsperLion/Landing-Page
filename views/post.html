@@ -1,0 +1,50 @@
+<div class="head-bg-sub"></div>
+
+<section class="title">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-sm-12 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-4">
+        <h2>
+          post
+        </h2>
+        <h4>
+          blog/post
+        </h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="post">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <div class="article">
+          <div class="img"></div>
+          <div class="info">
+            <div class="date">{{mainCtrl.activePost.date}}</div>
+            <div class="comments" data-ng-hide="post.comments == 0">
+              <div class="icon"></div>
+              <div class="nums">{{mainCtrl.activePost.comments}}</div>
+            </div>
+            <div class="likes" data-ng-hide="post.likes == 0"
+                  data-ng-click="blogCtrl.likePost(post)">
+              <div class="icon"></div>
+              <div class="nums" >{{mainCtrl.activePost.likes}}</div>
+            </div>
+          </div>
+          <div class="tags-list">
+            <div class="tag" data-ng-repeat="tag in mainCtrl.activePost.tags">
+              {{tag}}
+            </div>
+          </div>
+          <h4>{{mainCtrl.activePost.header}}</h3>
+          <p>{{mainCtrl.activePost.text}}</p>
+          <a href="#blog">
+            <button>Back</button>      
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
