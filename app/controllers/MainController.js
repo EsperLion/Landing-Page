@@ -2,7 +2,10 @@ app.controller('MainController', ['$route', '$routeParams', '$location', functio
   var mainCtrl = this;
 
   mainCtrl.mobMenuState = false;
+
   mainCtrl.route = "";
+
+  mainCtrl.activePost = {};
 
   mainCtrl.updatePath = function () {
     setTimeout(function () {
@@ -14,4 +17,9 @@ app.controller('MainController', ['$route', '$routeParams', '$location', functio
     }, 1500);
   };
   mainCtrl.updatePath();
+
+  mainCtrl.openPost = function (post) {
+    mainCtrl.activePost = {};
+    mainCtrl.activePost = post;    
+  };
 }]);

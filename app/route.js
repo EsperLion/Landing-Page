@@ -17,6 +17,9 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
     .when('/contact', {
       templateUrl: "views/contact.html"
     })
+    .when('/post', {
+      templateUrl: "views/post.html"
+    })
     .otherwise('/', {
       templateUrl: "views/home.html",
       controller: "HomeController as homeCtrl"

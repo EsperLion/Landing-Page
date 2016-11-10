@@ -257,6 +257,17 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
       }
     }
   };
+
+  blogCtrl.likePost = (function () {
+    var clicked = false;
+    return function (post) {
+      if (!clicked) 
+        post.likes++;
+      else 
+        post.likes--;
+      clicked = !clicked;
+    };
+  })();
 }]);
 
 app.filter('customOrderBy', function () {
