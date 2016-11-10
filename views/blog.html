@@ -18,7 +18,7 @@
 <section class="articles">
   <div class="container">
     <div class="row">
-          <div class="col-md-3 col-lg-3 col-lg-offset-1 col-md-offset-1 col-lg-push-8 col-md-push-8">
+          <div class="col-md-4 col-lg-3 col-lg-offset-1 col-md-offset-0 col-lg-push-8 col-md-push-8">
         <form class="block">
           <input type="search" name="search" placeholder="SEARCH...">
           <div class="search-icon"></div>
@@ -40,7 +40,11 @@
                 | limitTo: 3 : 0">
             <div class="img"></div>
             <div class="info">
-              <h4>{{post.header}}</h4>
+              <a href="#post">
+                <h4 data-ng-click="mainCtrl.openPost(post, blogCtrl.comments)">
+                  {{post.header}}
+                </h4>
+              </a>
               <p>{{post.date}}</p>
             </div>
           </div>
@@ -105,7 +109,7 @@
           <h4>{{post.header}}</h3>
           <p>{{post.text}}</p>
           <a href="#post" 
-              data-ng-click="mainCtrl.openPost(post)">continue reading...</a>
+              data-ng-click="mainCtrl.openPost(post, blogCtrl.comments)">continue reading...</a>
         </div>
       </div>
     </div>

@@ -46,5 +46,16 @@
         </div>
       </div>
     </div>
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h3>comments</h3> 
+        <div class="comms"
+              data-ng-repeat="comm in mainCtrl.activeComms">
+          <h4>{{mainCtrl.activePost.header}}</h4>
+          <p>{{comm.text}}</hp>
+          <p>{{comm.date}}</p>
+        </div>
+      </div> 
+    </div>
   </div>
 </section>

@@ -7,6 +7,8 @@ app.controller('MainController', ['$route', '$routeParams', '$location', functio
 
   mainCtrl.activePost = {};
 
+  mainCtrl.activeComms = [];
+
   mainCtrl.updatePath = function () {
     setTimeout(function () {
       mainCtrl.route = $location.path();
@@ -18,8 +20,16 @@ app.controller('MainController', ['$route', '$routeParams', '$location', functio
   };
   mainCtrl.updatePath();
 
-  mainCtrl.openPost = function (post) {
+  mainCtrl.openPost = function (post, comms) {
+
     mainCtrl.activePost = {};
-    mainCtrl.activePost = post;    
+    mainCtrl.activePost = post;
+
+    mainCtrl.activeComms = [];
+    for (var i = 0; i < comms.length; i++) {
+      if (post.post_id == comms[i].post_id) {
+        mainCtrl.activeComms.push(comms[i]);
+      }
+    }
   };
 }]);

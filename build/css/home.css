@@ -917,6 +917,17 @@ h3 {
       background: #76e9c2;
       box-shadow: 0 0 10px #60606e; }
 
+.post h3 {
+  margin-top: 30px; }
+
+.post .comms {
+  position: relative;
+  border-bottom: 1px solid #60606e; }
+  .post .comms h4 {
+    margin: 15px 0 8px; }
+  .post .comms p {
+    font-size: 12px; }
+
 header .logo {
   position: relative;
   line-height: 100px;

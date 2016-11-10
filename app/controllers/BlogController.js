@@ -190,7 +190,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
         date: Math.floor((Math.random() * 28) + 1) + "." + Math.floor((Math.random() * 12) + 1) + "." + Math.floor((Math.random() * (2020 - 2015)) + 2015),
         text: text
       };
-      k = k == 10 ? 0 : k;
+      k = k == 11 ? 0 : k;
       text = "";
     }
   };
