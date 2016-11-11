@@ -36,7 +36,7 @@ section {
 p {
   color: #60606e;
   font-size: 16px;
-  font-family: "Montserrat Light";
+  font-family: "Montserrat Light", Arial;
   line-height: 24px;
   margin: 0; }
 
@@ -45,7 +45,7 @@ h3 {
   width: 100%;
   margin: 0 0 30px;
   font-size: 30px;
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat Bold", Arial;
   text-transform: uppercase;
   color: #60606e; }
 
@@ -75,7 +75,7 @@ h3 {
   .title h4 {
     text-align: center;
     text-transform: uppercase;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     margin: 0; }
   .title h2 {
     font-size: 36px;
@@ -116,7 +116,7 @@ h3 {
     padding-left: 20px;
     list-style-image: url("../../img/sList.png"); }
     .what-we-do .list ul li {
-      font-family: "Montserrat Light";
+      font-family: "Montserrat Light", Arial;
       font-size: 14px;
       line-height: 28px;
       color: #60606e; }
@@ -161,7 +161,7 @@ h3 {
 
 .our-bonuses h4 {
   font-size: 18px;
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat Bold", Arial;
   text-align: center;
   padding: 16px 0;
   margin: 0;
@@ -171,7 +171,7 @@ h3 {
 .our-bonuses p {
   font-size: 14px;
   line-height: 30px;
-  font-family: "Montserrat";
+  font-family: "Montserrat", Arial;
   text-align: center;
   color: #60606e; }
 
@@ -225,7 +225,7 @@ h3 {
     color: #fff;
     font-size: 14px;
     line-height: 30px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     margin-bottom: 50px; }
   .pricing .plan ul {
     list-style: none;
@@ -235,7 +235,7 @@ h3 {
     padding-left: 20px;
     list-style-image: url("../../img/sList.png"); }
     .pricing .plan ul li {
-      font-family: "Montserrat Light";
+      font-family: "Montserrat Light", Arial;
       font-size: 14px;
       line-height: 30px;
       color: #60606e; }
@@ -246,7 +246,7 @@ h3 {
     padding: 0 40px;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     border: none;
     line-height: 50px;
     -webkit-transition: all 0.5s ease-out;
@@ -279,7 +279,7 @@ h3 {
 .about h4 {
   color: #60606e;
   font-size: 14px;
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat Bold", Arial;
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 25px; }
@@ -343,7 +343,7 @@ h3 {
         font-size: 18px;
         line-height: 40px;
         color: #60606e;
-        font-family: "Montserrat Bold";
+        font-family: "Montserrat Bold", Arial;
         width: fit-content;
         float: left;
         margin: 0;
@@ -408,7 +408,7 @@ h3 {
     padding: 0 40px;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     border: none;
     line-height: 50px;
     -webkit-transition: all 0.5s ease-out;
@@ -462,7 +462,7 @@ h3 {
     margin: 0 auto;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     cursor: pointer; }
 
 .staff .flex-container {
@@ -529,7 +529,7 @@ h3 {
       font-size: 14px;
       line-height: 14px;
       box-sizing: border-box;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       margin-right: 14px; }
     .articles .article .info .comments, .articles .article .info .likes {
       position: relative;
@@ -554,7 +554,7 @@ h3 {
         text-transform: uppercase;
         font-size: 14px;
         line-height: 14px;
-        font-family: "Montserrat Bold";
+        font-family: "Montserrat Bold", Arial;
         margin: 8px 0; }
     .articles .article .info .comments .icon {
       background: url("../../img/comm.png") no-repeat center; }
@@ -576,7 +576,7 @@ h3 {
       float: left;
       position: relative;
       font-size: 12px;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       line-height: 12px;
       padding: 11px 22px;
       color: #60606e;
@@ -590,7 +590,7 @@ h3 {
     color: #60606e;
     font-size: 18px;
     line-height: 18px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     margin: 22px 0;
     text-transform: uppercase; }
   .articles .article p {
@@ -601,7 +601,7 @@ h3 {
     position: relative;
     color: #60606e;
     font-size: 14px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     text-transform: uppercase; }
     .articles .article a:hover {
       text-shadow: 0 0 2px #60606e; }
@@ -613,7 +613,7 @@ h3 {
   padding: 0 40px;
   text-transform: uppercase;
   font-size: 14px;
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat Bold", Arial;
   border: none;
   line-height: 50px;
   -webkit-transition: all 0.5s ease-out;
@@ -636,7 +636,7 @@ h3 {
     color: #60606e;
     height: 40px;
     line-height: 40px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     text-indent: 2em;
     width: 100%;
     font-size: 12px;
@@ -656,7 +656,7 @@ h3 {
   .articles .posts h4 {
     position: relative;
     font-size: 14px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     color: #60606e;
     text-transform: uppercase;
     margin: 0 0 30px; }
@@ -677,7 +677,7 @@ h3 {
       width: 33.33%;
       text-align: center;
       color: #60606e;
-      font-family: 'Montserrat Bold';
+      font-family: "Montserrat Bold", Arial;
       font-size: 12px;
       line-height: 12px;
       padding-bottom: 20px;
@@ -727,7 +727,7 @@ h3 {
   .articles .cats h4 {
     position: relative;
     font-size: 14px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     color: #60606e;
     text-transform: uppercase;
     margin: 0 0 30px; }
@@ -771,7 +771,7 @@ h3 {
   .articles .tags h4 {
     position: relative;
     font-size: 14px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     color: #60606e;
     text-transform: uppercase;
     margin: 0 0 30px; }
@@ -779,7 +779,7 @@ h3 {
     float: left;
     position: relative;
     font-size: 12px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     line-height: 12px;
     padding: 11px 22px;
     color: #60606e;
@@ -830,7 +830,7 @@ h3 {
       font-size: 14px;
       line-height: 14px;
       box-sizing: border-box;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       margin-right: 14px; }
     .post .article .info .comments, .post .article .info .likes {
       position: relative;
@@ -855,7 +855,7 @@ h3 {
         text-transform: uppercase;
         font-size: 14px;
         line-height: 14px;
-        font-family: "Montserrat Bold";
+        font-family: "Montserrat Bold", Arial;
         margin: 8px 0; }
     .post .article .info .comments .icon {
       background: url("../../img/comm.png") no-repeat center; }
@@ -877,7 +877,7 @@ h3 {
       float: left;
       position: relative;
       font-size: 12px;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       line-height: 12px;
       padding: 11px 22px;
       color: #60606e;
@@ -891,7 +891,7 @@ h3 {
     color: #60606e;
     font-size: 18px;
     line-height: 18px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     margin: 22px 0;
     text-transform: uppercase; }
   .post .article p {
@@ -906,7 +906,7 @@ h3 {
     padding: 0 40px;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     border: none;
     line-height: 50px;
     -webkit-transition: all 0.5s ease-out;
@@ -931,7 +931,7 @@ h3 {
 header .logo {
   position: relative;
   line-height: 100px;
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat Bold", Arial;
   font-size: 18px;
   text-transform: uppercase;
   color: #60606e; }
@@ -956,7 +956,7 @@ header .menu-desk {
       line-height: 100px;
       font-size: 18px;
       text-transform: uppercase;
-      font-family: "Montserrat";
+      font-family: "Montserrat", Arial;
       margin: 0 10px; }
 
 header .menu-mob {
@@ -990,7 +990,7 @@ header .menu-mob {
       line-height: 30px;
       font-size: 18px;
       text-transform: uppercase;
-      font-family: "Montserrat";
+      font-family: "Montserrat", Arial;
       text-align: right;
       padding: 0 20px; }
       header .menu-mob .items .item:hover {
@@ -1010,7 +1010,7 @@ header .menu-mob {
     width: 100px;
     color: #60606e;
     font-size: 18px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     margin: 0 auto;
     background: #7beec7;
     line-height: 30px;
@@ -1020,7 +1020,7 @@ header .menu-mob {
     position: relative;
     width: 100%;
     color: #60606e;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     font-size: 48px;
     border: 10px solid #60606e;
     box-sizing: border-box;
@@ -1064,7 +1064,7 @@ header .menu-mob {
     padding: 0 40px;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     border: none;
     line-height: 50px;
     -webkit-transition: all 0.5s ease-out;
@@ -1123,7 +1123,7 @@ header .menu-mob {
     background: url("../../img/sli.png") no-repeat left; }
   .choose-us .list h4 {
     margin: 0;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     font-size: 18px;
     line-height: 20px;
     text-transform: uppercase; }
@@ -1133,7 +1133,7 @@ header .menu-mob {
     margin-top: 26px;
     margin-bottom: 36px; }
     .choose-us .list ul li {
-      font-family: "Montserrat Light";
+      font-family: "Montserrat Light", Arial;
       font-size: 14px;
       text-transform: uppercase;
       line-height: 26px;
@@ -1175,7 +1175,7 @@ header .menu-mob {
   margin: 0;
   margin-top: 26px; }
   .portfolio .cats .cat-item {
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     font-size: 14px;
     line-height: 22px;
     padding: 0 20px;
@@ -1229,7 +1229,7 @@ header .menu-mob {
     padding: 0 40px;
     text-transform: uppercase;
     font-size: 14px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     border: none;
     line-height: 50px;
     -webkit-transition: all 0.5s ease-out;
@@ -1257,7 +1257,7 @@ header .menu-mob {
         color: #60606e;
         height: 50px;
         line-height: 50px;
-        font-family: "Montserrat Bold";
+        font-family: "Montserrat Bold", Arial;
         text-indent: 2em;
         width: 75%; }
         @media screen and (max-width: 1199px) {
@@ -1273,7 +1273,7 @@ header .menu-mob {
         padding: 0 40px;
         text-transform: uppercase;
         font-size: 14px;
-        font-family: "Montserrat Bold";
+        font-family: "Montserrat Bold", Arial;
         border: none;
         line-height: 50px;
         -webkit-transition: all 0.5s ease-out;
@@ -1292,7 +1292,8 @@ footer {
   padding: 50px 0 65px; }
   footer .menu-desk {
     position: relative;
-    width: 100%; }
+    width: 100%;
+    margin-bottom: 35px; }
     footer .menu-desk:before, footer .menu-desk:after {
       content: '';
       display: table; }
@@ -1312,8 +1313,17 @@ footer {
         float: left;
         font-size: 18px;
         text-transform: uppercase;
-        font-family: "Montserrat";
+        font-family: "Montserrat", Arial;
         margin: 0 10px; }
+  footer #lang {
+    background: transparent;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-family: "Montserrat", Arial;
+    border: none;
+    color: #60606e; }
   footer p {
     text-align: right;
     margin-bottom: 25px; }

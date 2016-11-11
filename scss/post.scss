@@ -29,7 +29,7 @@
         font-size: 14px;
         line-height: 14px;
         box-sizing: border-box;
-        font-family: "Montserrat Bold";
+        font-family: "Montserrat Bold", Arial;
         margin-right: 14px;
       }
       .comments, .likes {
@@ -52,7 +52,7 @@
           text-transform: uppercase;
           font-size: 14px;
           line-height: 14px;
-          font-family: "Montserrat Bold";
+          font-family: "Montserrat Bold", Arial;
           margin: 8px 0;
         }
       }
@@ -76,7 +76,7 @@
         float: left;
         position: relative;
         font-size: 12px;
-        font-family: "Montserrat Bold";
+        font-family: "Montserrat Bold", Arial;
         line-height: 12px;
         padding: 11px 22px;
         color: $font_color;
@@ -92,7 +92,7 @@
       color: $font_color;
       font-size: 18px;
       line-height: 18px;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       margin: 22px 0;
       text-transform: uppercase;
     }

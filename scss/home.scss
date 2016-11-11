@@ -11,7 +11,7 @@ header {
   .logo {
     position: relative;
     line-height: 100px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     font-size: 18px;
     text-transform: uppercase;
     color: $font_color;
@@ -33,7 +33,7 @@ header {
         line-height: 100px;
         font-size: 18px;
         text-transform: uppercase;
-        font-family: "Montserrat";
+        font-family: "Montserrat", Arial;
         margin: 0 10px;
       }
     }
@@ -73,7 +73,7 @@ header {
         line-height: 30px;
         font-size: 18px;
         text-transform: uppercase;
-        font-family: "Montserrat";
+        font-family: "Montserrat", Arial;
         text-align: right;
         padding: 0 20px;
         &:hover {
@@ -94,7 +94,7 @@ header {
     width: 100px;
     color: $font_color;
     font-size: 18px;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     margin: 0 auto;
     background: $blocks_color;
     line-height: 30px;
@@ -106,7 +106,7 @@ header {
     position: relative;
     width: 100%;
     color: $font_color;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     font-size: 48px;
     border: 10px solid $font_color;
     box-sizing: border-box;
@@ -186,7 +186,7 @@ header {
 
     h4 {
       margin: 0;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       font-size: 18px;
       line-height: 20px;
       text-transform: uppercase;
@@ -199,7 +199,7 @@ header {
       margin-bottom: 36px;
 
       li {
-        font-family: "Montserrat Light";
+        font-family: "Montserrat Light", Arial;
         font-size: 14px;
         text-transform: uppercase;
         line-height: 26px;
@@ -242,7 +242,7 @@ header {
     margin: 0;
     margin-top: 26px;
     .cat-item {
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       font-size: 14px;
       line-height: 22px;
       padding: 0 20px;
@@ -320,7 +320,7 @@ header {
         color: $font_color;
         height: 50px;
         line-height: 50px;
-        font-family: "Montserrat Bold";
+        font-family: "Montserrat Bold", Arial;
         text-indent: 2em;
         width:75%;
         @include laptop {width: 65%;}
@@ -343,6 +343,7 @@ footer {
   .menu-desk {
     position: relative;
     width: 100%;
+    margin-bottom: 35px;
     @include clearfix();
     @include tablet {
       width: fit-content;
@@ -358,10 +359,20 @@ footer {
         float: left;
         font-size: 18px;
         text-transform: uppercase;
-        font-family: "Montserrat";
+        font-family: "Montserrat", Arial;
         margin: 0 10px;
       }
     }
+  }
+  #lang {
+    background: transparent;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-family: "Montserrat", Arial;
+    border: none;
+    color: $font_color;
   }
 
   p {

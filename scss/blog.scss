@@ -32,7 +32,7 @@
         font-size: 14px;
         line-height: 14px;
         box-sizing: border-box;
-        font-family: "Montserrat Bold";
+        font-family: "Montserrat Bold", Arial;
         margin-right: 14px;
       }
       .comments, .likes {
@@ -55,7 +55,7 @@
           text-transform: uppercase;
           font-size: 14px;
           line-height: 14px;
-          font-family: "Montserrat Bold";
+          font-family: "Montserrat Bold", Arial;
           margin: 8px 0;
         }
       }
@@ -79,7 +79,7 @@
         float: left;
         position: relative;
         font-size: 12px;
-        font-family: "Montserrat Bold";
+        font-family: "Montserrat Bold", Arial;
         line-height: 12px;
         padding: 11px 22px;
         color: $font_color;
@@ -95,7 +95,7 @@
       color: $font_color;
       font-size: 18px;
       line-height: 18px;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       margin: 22px 0;
       text-transform: uppercase;
     }
@@ -108,7 +108,7 @@
       position: relative;
       color: $font_color;
       font-size: 14px;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       text-transform: uppercase;
       &:hover {
         text-shadow: 0 0 2px $font_color;
@@ -132,7 +132,7 @@
       color: $font_color;
       height: 40px;
       line-height: 40px;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       text-indent: 2em;
       width: 100%;
       font-size: 12px;
@@ -154,7 +154,7 @@
     h4 {
       position: relative;
       font-size: 14px;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       color: $font_color;
       text-transform: uppercase;
       margin: 0 0 30px;
@@ -172,7 +172,7 @@
         width: 33.33%;
         text-align: center;
         color: $font_color;
-        font-family: 'Montserrat Bold';
+        font-family: "Montserrat Bold", Arial;
         font-size: 12px;
         line-height: 12px;
         padding-bottom: 20px;
@@ -230,7 +230,7 @@
     h4 {
       position: relative;
       font-size: 14px;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       color: $font_color;
       text-transform: uppercase;
       margin: 0 0 30px;
@@ -278,7 +278,7 @@
     h4 {
       position: relative;
       font-size: 14px;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       color: $font_color;
       text-transform: uppercase;
       margin: 0 0 30px;
@@ -287,7 +287,7 @@
       float: left;
       position: relative;
       font-size: 12px;
-      font-family: "Montserrat Bold";
+      font-family: "Montserrat Bold", Arial;
       line-height: 12px;
       padding: 11px 22px;
       color: $font_color;

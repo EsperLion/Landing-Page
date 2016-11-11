@@ -1,4 +1,4 @@
-app.controller('MainController', ['$route', '$routeParams', '$location', function( $route, $routeParams, $location){
+app.controller('MainController', ['$scope', '$route', '$routeParams', '$location', '$http', function($scope, $route, $routeParams, $location, $http){
   var mainCtrl = this;
 
   mainCtrl.mobMenuState = false;
@@ -8,6 +8,10 @@ app.controller('MainController', ['$route', '$routeParams', '$location', functio
   mainCtrl.activePost = {};
 
   mainCtrl.activeComms = [];
+
+  mainCtrl.lang = "en";
+
+  mainCtrl.content = {};
 
   mainCtrl.updatePath = function () {
     setTimeout(function () {
@@ -32,4 +36,21 @@ app.controller('MainController', ['$route', '$routeParams', '$location', functio
       }
     }
   };
+
+  $scope.$watch(function () {
+    return mainCtrl.lang;
+  }, function (newVal, oldVal) {
+    $http.get('app/lang/' + mainCtrl.lang + ".json")
+      .success(function (data, status) {
+        console.log("http request succeed");
+        console.log(status);
+        console.log(data);
+        mainCtrl.content = data;
+      })
+      .error(function (data, status) {
+        console.log("http request has an error");
+        console.log(status);
+        console.log(data);
+      });
+  });
 }]);

@@ -5,10 +5,11 @@
     <div class="row">
       <div class="col-sm-12 col-sm-12 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-4">
         <h2>
-          about us
+          {{mainCtrl.content.about.about}}
         </h2>
         <h4>
-          home/about us
+          {{mainCtrl.content.menu[0]}} / 
+          {{mainCtrl.content.menu[2]}}
         </h4>
       </div>
     </div>
@@ -20,15 +21,15 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-1 col-xs-offset-0">
-        <h3>about us</h3>
-        <h4>we are awesome</h4>
+        <h3>{{mainCtrl.content.about.about}}</h3>
+        <h4>{{mainCtrl.content.about.awesome}}</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam quo consequatur atque voluptatibus velit odio facere molestiae cumque quaerat corrupti quae tempora cupiditate temporibus itaque, illo exercitationem nulla, maxime, magnam magni fugit! Sint voluptates, perferendis cumque tenetur unde distinctio nobis, magni debitis impedit! Eum deleniti autem saepe aut quo similique, accusantium explicabo earum, in assumenda sunt repudiandae nemo, odit quasi veniam deserunt. Eos expedita neque inventore quam dolore odio, minima.
         </p>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-10 col-xs-12 col-lg-offset-0 col-md-offset-0 col-sm-offset-1 col-xs-offset-0">
-        <h3>what we do</h3>
-        <h4>creative & digital</h4>
+        <h3>{{mainCtrl.content.about.what}}</h3>
+        <h4>{{mainCtrl.content.about.creative}}</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam cum totam aut alias sed deleniti architecto vel voluptatem provident, eum a earum deserunt sequi. Placeat molestiae dolore, obcaecati, in tempore assumenda ea omnis ipsam itaque laudantium nostrum aliquam! Iusto ducimus inventore porro facilis reiciendis pariatur praesentium, eum placeat sunt delectus iure, reprehenderit consequatur at libero similique fugiat voluptates dicta eius eligendi tenetur soluta sequi dolorum dolores. Maiores ipsam nam ipsa odit incidunt debitis, harum quia commodi in, officiis quisquam quis.
         </p>
@@ -41,7 +42,7 @@
   <div class="container">
     <div class="row header">
       <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
-        <h3>some benefits</h3>
+        <h3>{{mainCtrl.content.about.benefits}}</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum commodi explicabo molestiae similique dicta assumenda consequatur illum, doloribus.</p>
       </div>
     </div>
@@ -51,42 +52,42 @@
           <div class="item resp">
             <div class="mini-h">
               <div class="img"></div>
-              <h4>fully responsive</h4>
+              <h4>{{mainCtrl.content.about.responsive}}</h4>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias incidunt tempora dolorem error consequatur, dignissimos! Corporis ex eveniet, laborum est assumenda perferendis iusto quaerat nesciunt?</p>
           </div>
           <div class="item uopt">
             <div class="mini-h">
               <div class="img"></div>
-              <h4>UNLIMITED OPTIONS</h4>
+              <h4>{{mainCtrl.content.about.options}}</h4>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias incidunt tempora dolorem error consequatur, dignissimos! Corporis ex eveniet, laborum est assumenda perferendis iusto quaerat nesciunt?</p>
           </div>
           <div class="item wp">
             <div class="mini-h">
               <div class="img"></div>
-              <h4>WORDPRESS</h4>
+              <h4>{{mainCtrl.content.about.wordpress}}</h4>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias incidunt tempora dolorem error consequatur, dignissimos! Corporis ex eveniet, laborum est assumenda perferendis iusto quaerat nesciunt?</p>
           </div>
           <div class="item e-comm">
             <div class="mini-h">
               <div class="img"></div>
-              <h4>e-commerce</h4>
+              <h4>{{mainCtrl.content.about.comm}}</h4>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias incidunt tempora dolorem error consequatur, dignissimos! Corporis ex eveniet, laborum est assumenda perferendis iusto quaerat nesciunt?</p>
           </div>
           <div class="item des">
             <div class="mini-h">
               <div class="img"></div>
-              <h4>CUSTOMIZABLE DESIGN</h4>
+              <h4>{{mainCtrl.content.about.design}}</h4>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias incidunt tempora dolorem error consequatur, dignissimos! Corporis ex eveniet, laborum est assumenda perferendis iusto quaerat nesciunt?</p>
           </div>
           <div class="item sup">
             <div class="mini-h">
               <div class="img"></div>
-              <h4>SUPPORT</h4>
+              <h4>{{mainCtrl.content.about.supp}}</h4>
             </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias incidunt tempora dolorem error consequatur, dignissimos! Corporis ex eveniet, laborum est assumenda perferendis iusto quaerat nesciunt?</p>
           </div>
@@ -100,7 +101,7 @@
   <div class="container">
     <div class="row header">
       <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
-        <h3>the dream team</h3>
+        <h3>{{mainCtrl.content.about.team}}</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum commodi explicabo molestiae similique dicta assumenda consequatur illum, doloribus.</p>
       </div>
     </div>
@@ -135,7 +136,7 @@
         <div class="more">
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis, quia nemo porro consequuntur.</p>
           <div>
-            <button class="read-more">read more</button>
+            <button class="read-more">{{mainCtrl.content.btns.readmore}}</button>
           </div>
         </div>
       </div>
