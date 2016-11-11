@@ -3,8 +3,8 @@
 <section class="container we-are">
   <div class="row">
     <div class="col-xs-12 col-sm-10 col-md-8 col-lg-6 col-xs-offset-0 col-sm-offset-1 col-md-offset-2 col-lg-offset-3">
-      <h4>we're</h4>
-      <h2>creative agency</h2>
+      <h4>{{mainCtrl.content.home.weare}}</h4>
+      <h2>{{mainCtrl.content.home.creative}}</h2>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. At, soluta. Iste, aut distinctio voluptas incidunt nisi quo quod!</p> 
     </div>
   </div>
@@ -16,9 +16,9 @@
       <div class="image"></div>
     </div>
     <div class="col-xs-12 col-sm-10 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-1 col-md-offset-1 col-lg-offset-1">
-      <h3>history of agency</h3>
+      <h3>{{mainCtrl.content.home.history}}</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate necessitatibus, ipsum cum dolor ducimus, laudantium sint! Sapiente rerum iusto sunt a nisi at. Fugit magni assumenda eius molestiae consequuntur. Corporis obcaecati, temporibus, veniam assumenda alias, aut aperiam consequuntur facilis rerum quam fuga voluptates illo nemo quisquam? Deserunt sit facilis voluptatem?</p>
-      <button class="read-more">read more</button>
+      <button class="read-more">{{mainCtrl.content.btns.readmore}}</button>
     </div>
   </div>
 </section>
@@ -26,7 +26,7 @@
 <section class="container choose-us">
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
-      <h3>why choose us</h3>
+      <h3>{{mainCtrl.content.home.why}}</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum commodi explicabo molestiae similique dicta assumenda consequatur illum, doloribus.</p>
     </div>
   </div>
@@ -35,7 +35,7 @@
     <div class="col-xs-12 col-sm-10 col-md-7 col-lg-7 col-xs-offset-0 col-sm-offset-1 col-md-offset-0 col-lg-offset-0">
       <div class="list">
         <div class="option"></div>
-        <h4>unlimited options</h4>
+        <h4>{{mainCtrl.content.home.benefits[0]}}</h4>
         <ul>
           <li>Lorem ipsum.</li>
           <li>Lorem ipsum.</li>
@@ -46,7 +46,7 @@
 
       <div class="list">
         <div class="design"></div>
-        <h4>design & development</h4>
+        <h4>{{mainCtrl.content.home.benefits[1]}}</h4>
         <ul>
           <li>Lorem ipsum.</li>
           <li>Lorem ipsum.</li>
@@ -57,7 +57,7 @@
 
       <div class="list">
         <div class="e-comm"></div>
-        <h4>e-commerce</h4>
+        <h4>{{mainCtrl.content.home.benefits[2]}}</h4>
         <ul>
           <li>Lorem ipsum.</li>
           <li>Lorem ipsum.</li>
@@ -68,7 +68,7 @@
 
       <div class="list">
         <div class="custom"></div>
-        <h4>customizable design</h4>
+        <h4>{{mainCtrl.content.home.benefits[3]}}</h4>
         <ul>
           <li>Lorem ipsum.</li>
           <li>Lorem ipsum.</li>
@@ -88,21 +88,21 @@
 <section class="container portfolio">
   <div class="row header">
     <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
-      <h3>Our portfolio</h3>
+      <h3>{{mainCtrl.content.home.portfolio}}</h3>
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum commodi explicabo molestiae similique dicta assumenda consequatur illum, doloribus.</p>
     </div>
   </div>
 
   <div class="row">
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
-      <h3>choose category</h3>
+      <h3>{{mainCtrl.content.home.category}}</h3>
       <ul class="cats">
-        <li data-ng-click="homeCtrl.chooseTopic($event)" data-topic="all" class="cat-item active">all</li>
-        <li data-ng-click="homeCtrl.chooseTopic($event)" data-topic="iron" class="cat-item">wedesign</li>
-        <li data-ng-click="homeCtrl.chooseTopic($event)" data-topic="black" class="cat-item">graphics design</li>
-        <li data-ng-click="homeCtrl.chooseTopic($event)" data-topic="white" class="cat-item">fashion</li>
-        <li data-ng-click="homeCtrl.chooseTopic($event)" data-topic="busy" class="cat-item">logo design</li>
-        <li data-ng-click="homeCtrl.chooseTopic($event)" ata-topic="lazy" class="cat-item">advertising</li>
+        <li data-ng-click="homeCtrl.chooseTopic($event)" data-topic="all" class="cat-item active">{{mainCtrl.content.home.cats[0]}}</li>
+        <li data-ng-click="homeCtrl.chooseTopic($event)" data-topic="iron" class="cat-item">{{mainCtrl.content.home.cats[1]}}</li>
+        <li data-ng-click="homeCtrl.chooseTopic($event)" data-topic="black" class="cat-item">{{mainCtrl.content.home.cats[2]}}</li>
+        <li data-ng-click="homeCtrl.chooseTopic($event)" data-topic="white" class="cat-item">{{mainCtrl.content.home.cats[3]}}</li>
+        <li data-ng-click="homeCtrl.chooseTopic($event)" data-topic="busy" class="cat-item">{{mainCtrl.content.home.cats[4]}}</li>
+        <li data-ng-click="homeCtrl.chooseTopic($event)" ata-topic="lazy" class="cat-item">{{mainCtrl.content.home.cats[5]}}</li>
       </ul>
     </div>
     <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">

@@ -16,7 +16,7 @@ section {
 p {
   color: $font_color;
   font-size: 16px;
-  font-family: "Montserrat Light";
+  font-family: "Montserrat Light", Arial;
   line-height: 24px;
   margin: 0;
 }
@@ -26,7 +26,7 @@ h3 {
   width: 100%;
   margin: 0 0 30px;
   font-size: 30px;
-  font-family: "Montserrat Bold";
+  font-family: "Montserrat Bold", Arial;
   text-transform: uppercase;
   color: $font_color;
 }
@@ -60,7 +60,7 @@ h3 {
   h4 {
     text-align: center;
     text-transform: uppercase;
-    font-family: "Montserrat Bold";
+    font-family: "Montserrat Bold", Arial;
     margin: 0;
   }
   h2 {

@@ -2,4 +2,4 @@ $ cat .gitignore
 *.txt
 *.md
 node_modules/
-.git ignore
+.gitignore

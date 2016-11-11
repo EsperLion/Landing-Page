@@ -5,10 +5,11 @@
     <div class="row">
       <div class="col-sm-12 col-sm-12 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-4">
         <h2>
-          our service
+          {{mainCtrl.content.service.service}}
         </h2>
         <h4>
-          home/revice
+          {{mainCtrl.content.menu[0]}} / 
+          {{mainCtrl.content.menu[1]}}
         </h4>
       </div>
     </div>
@@ -19,7 +20,7 @@
   <div class="container">
     <div class="row header">
       <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
-        <h3>what we do</h3>
+        <h3>{{mainCtrl.content.service.what}}</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum commodi explicabo molestiae similique dicta assumenda consequatur illum, doloribus.</p>
       </div>
     </div>
@@ -59,28 +60,28 @@
     <div class="row">
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
         <div class="head-img pulse"></div>
-        <h4>KEEP PULSE GOING</h4>
+        <h4>{{mainCtrl.content.service.pulse}}</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
         <div class="head-img limits"></div>
-        <h4>pass the limits</h4>
+        <h4>{{mainCtrl.content.service.limits}}</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
         <div class="head-img idea"></div>
-        <h4>great ideas</h4>
+        <h4>{{mainCtrl.content.service.idea}}</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .
         </p>
       </div>
       <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-xs-offset-0 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
         <div class="head-img supp"></div>
-        <h4>awesome support</h4>
+        <h4>{{mainCtrl.content.service.supp}}</h4>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt .
         </p>
@@ -93,7 +94,7 @@
   <div class="container">
      <div class="row header">
       <div class="col-xs-12 col-sm-12 col-md-10 col-lg-8 col-sm-offset-0 col-md-offset-1 col-lg-offset-2">
-        <h3>pricing plans</h3>
+        <h3>{{mainCtrl.content.service.plans}}</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum commodi explicabo molestiae similique dicta assumenda consequatur illum, doloribus.</p>
       </div>
     </div>
@@ -103,7 +104,7 @@
               data-ng-class="plan == 1 ? 'active' : ''"
               data-ng-click="plan = 1">
           <div class="triangle"></div>
-          <h3>basic</h3>
+          <h3>{{mainCtrl.content.service.basic}}</h3>
           <p>$54.66 mobthly</p>
           <ul>
             <li>Lorem ipsum.</li>
@@ -114,7 +115,7 @@
             <li>Aperiam, optio?</li>
             <li>Facilis, enim.</li>
           </ul>
-          <button>get started</button>
+          <button>{{mainCtrl.content.btns.started}}</button>
         </div>
       </div>
       <div class="col-xs-12 col-sm-10 col-md-4 col-lg-4 col-xs-offset-0 col-sm-offset-1 col-md-offset-0 col-lg-offset-0">
@@ -122,7 +123,7 @@
               data-ng-class="plan == 2 ? 'active' : ''"
               data-ng-click="plan = 2">
           <div class="triangle"></div>
-          <h3>advanced</h3>
+          <h3>{{mainCtrl.content.service.advanced}}</h3>
           <p>$54.66 mobthly</p>
           <ul>
             <li>Lorem ipsum.</li>
@@ -133,7 +134,7 @@
             <li>Aperiam, optio?</li>
             <li>Facilis, enim.</li>
           </ul>
-          <button>get started</button>
+          <button>{{mainCtrl.content.btns.started}}</button>
         </div>
       </div>
       <div class="col-xs-12 col-sm-10 col-md-4 col-lg-4 col-xs-offset-0 col-sm-offset-1 col-md-offset-0 col-lg-offset-0">
@@ -141,7 +142,7 @@
               data-ng-class="plan == 3 ? 'active' : ''"
               data-ng-click="plan = 3">
           <div class="triangle"></div>
-          <h3>smart</h3>
+          <h3>{{mainCtrl.content.service.smart}}</h3>
           <p>$54.66 mobthly</p>
           <ul>
             <li>Lorem ipsum.</li>
@@ -152,7 +153,7 @@
             <li>Aperiam, optio?</li>
             <li>Facilis, enim.</li>
           </ul>
-          <button>get started</button>
+          <button>{{mainCtrl.content.btns.started}}</button>
         </div>
       </div>
     </div>

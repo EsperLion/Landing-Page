@@ -5,10 +5,11 @@
     <div class="row">
       <div class="col-sm-12 col-sm-12 col-md-6 col-lg-4 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-4">
         <h2>
-          post
+          {{mainCtrl.content.post}}
         </h2>
         <h4>
-          blog/post
+          {{mainCtrl.content.menu[3]}} / 
+          {{mainCtrl.content.post}}
         </h4>
       </div>
     </div>
@@ -41,14 +42,14 @@
           <h4>{{mainCtrl.activePost.header}}</h3>
           <p>{{mainCtrl.activePost.text}}</p>
           <a href="#blog">
-            <button>Back</button>      
+            <button>{{mainCtrl.content.btns.back}}</button>      
           </a>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
-        <h3>comments</h3> 
+        <h3>{{mainCtrl.content.blog.comms}}</h3> 
         <div class="comms"
               data-ng-repeat="comm in mainCtrl.activeComms">
           <h4>{{mainCtrl.activePost.header}}</h4>

@@ -1,0 +1,79 @@
+{
+  "menu": [
+    "home",
+    "service",
+    "about",
+    "blog"
+  ],
+  "home": {
+    "weare": "we're",
+    "creative": "creative agency",
+    "history": "history of agency",
+    "why": "why choose us",
+    "benefits": [
+      "unlimited options",
+      "design & development",
+      "e-commerce",
+      "CUSTOMIZABLE DESIGN"
+    ],
+    "portfolio": "our portfolio",
+    "category": "choose category",
+    "cats": [
+      "all",
+      "webdesign",
+      "graphics design",
+      "fashion",
+      "logo design",
+      "advertising"
+    ]
+  },
+  "service": {
+    "service": "our service",
+    "what": "what we do",
+    "pulse": "KEEP PULSE GOING",
+    "limits": "PASS THE LIMITS",
+    "idea": "GREAT IDEAS",
+    "supp": "AWESOME SUPPORT",
+    "plans": "PRICING PLANS",
+    "basic": "BASIC",
+    "advanced": "ADVANCED",
+    "smart": "SMART"
+  },
+  "about": {
+    "about": "about us",
+    "awesome": "we are awesome",
+    "what": "what we do",
+    "creative": "creative & digital",
+    "benefits": "SOME BENEFITS",
+    "responsive": "FULLY RESPONSIVE",
+    "options": "UNLIMITED OPTIONS",
+    "wordpress": "WORDPRESS",
+    "comm": "E-COMMERCE",
+    "design": "CUSTOMIZABLE DESIGN",
+    "supp": "SUPPORT",
+    "team": "THE DREAM TEAM"
+  },
+  "blog": {
+    "blog": "blog",
+    "continue": "CONTINUE READING...",
+    "search": "search...",
+    "posts": "POSTS",
+    "latest": "LATEST",
+    "popular": "popular",
+    "comms": "COMMENTS",
+    "cats": "CATAGORIES",
+    "tags": "TAGS"
+  },
+  "post": "post",
+  "btns" : {
+    "readmore": "readmore",
+    "intouch": "get in touch",
+    "send": "send",
+    "started": "get started",
+    "back": "back"
+  },
+  "subform": {
+    "cool": "YOU THINK WE'RE COOL? LET'S WORK TOGETHER",
+    "informed": "STAY INFORMED WITH OUR NEWS-LETTER"
+  }
+}
