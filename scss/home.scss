@@ -104,7 +104,9 @@ header {
 
   h2 {
     position: relative;
-    width: 100%;
+    width: fit-content;
+    padding: 0 38px;
+    
     color: $font_color;
     font-family: "Montserrat Bold", Arial;
     font-size: 48px;
@@ -113,12 +115,13 @@ header {
     line-height: 100px;
     text-transform: uppercase;
     text-align: center;
-    margin: 0;
+    margin: 0 auto;
   }
 
   p {
     text-align: center;
-    margin-top: 30px;
+    margin: 30px auto 0;
+    max-width: 555px;
   }
 }
 
@@ -135,6 +138,7 @@ header {
 
   h3{
     margin-top: 30px;
+
     @include h3line();
     @include tablet {
       width: fit-content;
@@ -153,6 +157,7 @@ header {
 .choose-us {
   h3{
     @include h3line();
+    // max-width: 264px;
     width: fit-content;
     margin: 0 auto;
   }
