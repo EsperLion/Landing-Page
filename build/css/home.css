@@ -457,6 +457,7 @@ h3 {
   margin-bottom: 0;
   margin-top: 0; }
   .staff .carousel-indicators li {
+    -webkit-border-radius: 0;
     border-radius: 0;
     background: #60606e;
     width: 15px;
@@ -475,6 +476,7 @@ h3 {
   .staff .item .foto {
     width: 82px;
     height: 82px;
+    -webkit-border-radius: 50%;
     border-radius: 50%;
     -webkit-box-shadow: inset 0 0 10px #60606e;
     box-shadow: inset 0 0 10px #60606e;
@@ -1368,6 +1370,80 @@ footer {
     width: 100%;
     margin-bottom: 35px; }
     footer .menu-desk:before, footer .menu-desk:after {
+      content: '';
+      display: table; }
+    footer .menu-desk:after {
+      clear: both; }
+    @media screen and (max-width: 991px) {
+      footer .menu-desk {
+        width: -webkit-fit-content;
+        width: -moz-fit-content;
+        width: fit-content;
+        margin: 0 auto; } }
+    footer .menu-desk .items {
+      list-style-type: none;
+      position: relative;
+      margin: 0;
+      padding: 0; }
+      footer .menu-desk .items .item {
+        position: relative;
+        float: left;
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: "Montserrat", Arial;
+        margin: 0 10px; }
+  footer #lang {
+    background: transparent;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 18px;
+    font-family: "Montserrat", Arial;
+    border: none;
+    color: #60606e; }
+  footer p {
+    text-align: right;
+    margin-bottom: 25px; }
+    @media screen and (max-width: 991px) {
+      footer p {
+        text-align: center;
+        margin: 30px 0; } }
+  footer .icon-wrap:before, footer .icon-wrap:after {
+    content: '';
+    display: table; }
+  footer .icon-wrap:after {
+    clear: both; }
+  @media screen and (max-width: 991px) {
+    footer .icon-wrap {
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      margin: 0 auto; } }
+  footer .icon-wrap a {
+    position: relative;
+    display: block;
+    float: right; }
+  footer .icon-wrap .icon {
+    width: 16px;
+    height: 16px;
+    background-size: contain;
+    margin: 10px;
+    opacity: 0.6; }
+    footer .icon-wrap .icon:hover {
+      opacity: 1; }
+  footer .icon-wrap .icon-1 {
+    background: url("../../img/social-006_facebook.png") no-repeat center; }
+  footer .icon-wrap .icon-2 {
+    background: url("../../img/social-003_twitter.png") no-repeat center; }
+  footer .icon-wrap .icon-3 {
+    background: url("../../img/social-018_youtube.png") no-repeat center; }
+  footer .icon-wrap .icon-4 {
+    background: url("../../img/social-011_linkedin.png") no-repeat center; }
+  footer .icon-wrap .icon-5 {
+    background: url("../../img/social-033-round_pinterest.png") no-repeat center; }
+  footer .icon-wrap .icon-6 {
+    background: url("../../img/social-038_instagram.png") no-repeat center; }
+after {
       content: '';
       display: table; }
     footer .menu-desk:after {
