@@ -1,10 +1,11 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
+var autoprefixer = require('gulp-autoprefixer');
+ 
 
 
-
-gulp.task('default', ['compile-sass', 'concat-js', 'watch']);
+gulp.task('default', ['compile-sass', 'prefix', 'watch']);
 
 
 //sass compile task
@@ -15,15 +16,26 @@ gulp.task('compile-sass', function () {
 });
 
 //js task
-gulp.task('concat-js', function () {
-  return gulp.src('js/*.js')
-    .pipe(concat('all.js'))
-    .pipe(gulp.dest('build/js'));
-});
+// gulp.task('concat-js', function () {
+//   return gulp.src('js/*.js')
+//     .pipe(concat('all.js'))
+//     .pipe(gulp.dest('build/js'));
+// });
 
 
 //watcher
 gulp.task('watch', function () {
   gulp.watch('scss/*.scss', ['compile-sass']);
-  gulp.watch('js/*.js', ['concat-js']);
+  gulp.watch('build/css/home.css', ['prefix']);
+  // gulp.watch('js/*.js', ['concat-js']);
+});
+
+
+gulp.task('prefix', function () {
+  gulp.src('build/css/home.css')
+    .pipe(autoprefixer({
+      browsers: ['last 10 versions'],
+      cascade: false
+    }))
+    .pipe(gulp.dest('build/css/'))
 });
