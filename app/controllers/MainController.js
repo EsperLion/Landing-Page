@@ -1,15 +1,15 @@
-app.controller('MainController', ['$scope', '$route', '$routeParams', '$location', '$http', function($scope, $route, $routeParams, $location, $http){
+app.controller('MainController', ['$scope', '$route', '$routeParams', '$location', '$http', '$data', function($scope, $route, $routeParams, $location, $http, $data){
   var mainCtrl = this;
 
   mainCtrl.mobMenuState = false;
 
   mainCtrl.route = "";
 
-  mainCtrl.activePost = {};
+  mainCtrl.activePost = $data.getPost() != null ? $data.getPost() : {};
+  
+  mainCtrl.activeComms = $data.getComms() != null ? $data.getComms() : [];
 
-  mainCtrl.activeComms = [];
-
-  mainCtrl.lang = "en";
+  mainCtrl.lang = $data.getLang() != null ? $data.getLang() : 'en';
 
   mainCtrl.content = {};
 
@@ -17,7 +17,7 @@ app.controller('MainController', ['$scope', '$route', '$routeParams', '$location
     setTimeout(function () {
       mainCtrl.route = $location.path();
       if (mainCtrl.route == "/about") {
-        $('#carousel-example-generic').carousel({ interval: 1500});
+        $('#carousel-example-generic').carousel({interval: 1500});
         $('#carousel-example-generic').carousel('cycle');
       }
     }, 1500);
@@ -25,9 +25,9 @@ app.controller('MainController', ['$scope', '$route', '$routeParams', '$location
   mainCtrl.updatePath();
 
   mainCtrl.openPost = function (post, comms) {
-
     mainCtrl.activePost = {};
     mainCtrl.activePost = post;
+    
 
     mainCtrl.activeComms = [];
     for (var i = 0; i < comms.length; i++) {
@@ -35,11 +35,17 @@ app.controller('MainController', ['$scope', '$route', '$routeParams', '$location
         mainCtrl.activeComms.push(comms[i]);
       }
     }
+
+    $data.savePost(mainCtrl.activePost);
+    $data.saveComms(mainCtrl.activeComms);
   };
 
   $scope.$watch(function () {
     return mainCtrl.lang;
   }, function (newVal, oldVal) {
+    
+    $data.saveLang(mainCtrl.lang);
+
     $http.get('app/lang/' + mainCtrl.lang + ".json")
       .success(function (data, status) {
         console.log("http request succeed");
@@ -53,4 +59,5 @@ app.controller('MainController', ['$scope', '$route', '$routeParams', '$location
         console.log(data);
       });
   });
+  
 }]);

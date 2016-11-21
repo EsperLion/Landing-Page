@@ -56,7 +56,7 @@ app.controller('HomeController',['$route', '$routeParams', '$location', function
   // Начальная инициализация галлереи
   gallCtrl.showGallery = function (imgs) {
     var cols = document.querySelectorAll('.portfolio .wrap .col');
-    console.log(imgs);
+    // console.log(imgs);
     if (cols.length > 0) {;
       for(var i = 0; i < imgs.length; i++){
         for(var j = 0; j < cols.length; j++){
