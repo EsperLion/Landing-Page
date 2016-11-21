@@ -87,7 +87,7 @@
       <div class="col-md-8 col-lg-8 col-lg-pull-4 col-md-pull-4">
         <div class="article" 
             data-ng-repeat="post in blogCtrl.posts | 
-            catFilter: blogCtrl.activeCat : false"
+            catFilter: blogCtrl.activeCat"
             data-ng-if="blogCtrl.show(post.category, post.tags)">
           <div class="img"></div>
           <div class="info">

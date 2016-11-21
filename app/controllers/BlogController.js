@@ -241,7 +241,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', '$data'
         return true;
       }
     } else {
-      if (blogCtrl.activeCat == '') {
+      if (blogCtrl.activeCat == 'ALL') {
         if (blogCtrl.activeTags.length > 0) {
           return blogCtrl.checkTags(tags);
         } else {
