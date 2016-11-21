@@ -5,10 +5,6 @@ app.controller('MainController', ['$scope', '$route', '$routeParams', '$location
 
   mainCtrl.route = "";
 
-  mainCtrl.activePost = $data.getPost() != null ? $data.getPost() : {};
-  
-  mainCtrl.activeComms = $data.getComms() != null ? $data.getComms() : [];
-
   mainCtrl.lang = $data.getLang() != null ? $data.getLang() : 'en';
 
   mainCtrl.content = {};
@@ -37,7 +33,7 @@ app.controller('MainController', ['$scope', '$route', '$routeParams', '$location
     }
 
     $data.savePost(mainCtrl.activePost);
-    $data.saveComms(mainCtrl.activeComms);
+    // $data.saveComms(mainCtrl.activeComms);
   };
 
   $scope.$watch(function () {

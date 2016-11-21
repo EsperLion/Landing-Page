@@ -65,7 +65,7 @@
           <ul class="items" data-ng-init="catNums = []">
             <li data-ng-repeat="cat in blogCtrl.cats"
                 data-ng-click="blogCtrl.chooseCat(cat)"
-                data-ng-class="blogCtrl.activeCat == cat ? 'active' : cat == 'ALL' && blogCtrl.activeCat == '' ? 'active' : '' ;">
+                data-ng-class="blogCtrl.activeCat == cat ? 'active' : '';">
               <p class="text">{{cat}}</p>
               <p class="num" 
                   data-ng-init="catNums[$index] = blogCtrl.checkNum(cat)">{{catNums[$index]}}</p>
@@ -87,7 +87,7 @@
       <div class="col-md-8 col-lg-8 col-lg-pull-4 col-md-pull-4">
         <div class="article" 
             data-ng-repeat="post in blogCtrl.posts | 
-            filter: blogCtrl.activeCat"
+            catFilter: blogCtrl.activeCat : false"
             data-ng-if="blogCtrl.show(post.category, post.tags)">
           <div class="img"></div>
           <div class="info">

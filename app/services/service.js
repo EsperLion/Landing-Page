@@ -9,18 +9,11 @@ app.service('$data', ['$http', function(){
   };
 
   this.getPost = function () {
-    return JSON.parse(localStorage.getItem('post'));
+    return localStorage.getItem('postId');
   };
 
-  this.savePost = function (post) {
-    localStorage.setItem('post', JSON.stringify(post));
+  this.savePost = function (postId) {
+    localStorage.setItem('postId', postId);
   };
 
-  this.saveComms = function (comms) {
-    localStorage.setItem('comms', JSON.stringify(comms));
-  };
-
-  this.getComms = function () {
-    return JSON.parse(localStorage.getItem('comms'));
-  };
 }]);

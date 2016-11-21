@@ -1,17 +1,20 @@
-app.controller('BlogController', ['$route', '$routeParams', '$location', function( $route, $routeParams, $location){
+app.controller('BlogController', ['$route', '$routeParams', '$location', '$data', function( $route, $routeParams, $location, $data){
   var blogCtrl = this;
 
   blogCtrl.tags = ['js', 'html/css', 'php', 'managment', 'SEO', 'SMM'];
 
   blogCtrl.cats = ['WEB', 'Business', 'Photography', 'Journal', 'ALL'];
 
-  blogCtrl.activeCat = '';
+  blogCtrl.activeCat = 'ALL';
 
   blogCtrl.activeTags = [];
 
-  blogCtrl.posts = [
-    {
-      post_id: 0,
+  blogCtrl.activePost = $data.getPost() != null ? $data.getPost() : null;
+  
+  // blogCtrl.activeComms = $data.getComms() != null ? $data.getComms() : [];
+
+  blogCtrl.posts = {
+    "0": {
       category:  blogCtrl.cats[1],
       tags: [
         blogCtrl.tags[3],
@@ -25,8 +28,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
       likes: 15,
       comments: 5
     },
-    {
-      post_id: 1,
+    "1": {
       category: blogCtrl.cats[0],
       tags: [
         blogCtrl.tags[0],
@@ -40,8 +42,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
       likes: 7,
       comments: 5
     },
-    {
-      post_id: 2,
+    "2": {
       category: blogCtrl.cats[2],
       tags: [
         blogCtrl.tags[1],
@@ -55,8 +56,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
       likes: 7,
       comments: 5
     },
-    {
-      post_id: 3,
+    "3": {
       category: blogCtrl.cats[3],
       tags: [
         blogCtrl.tags[2],
@@ -70,8 +70,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
       likes: 7,
       comments: 5
     },
-    {
-      post_id: 4,
+    "4": {
       category: blogCtrl.cats[1],
       tags: [
         blogCtrl.tags[3],
@@ -84,8 +83,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
       likes: 7,
       comments: 5
     },
-    {
-      post_id: 5,
+    "5": {
       category: blogCtrl.cats[0],
       tags: [
         blogCtrl.tags[0],
@@ -99,7 +97,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
       likes: 0,
       comments: 5
     },
-    {
+    "6": {
       category: blogCtrl.cats[2],
       tags: [
         blogCtrl.tags[2],
@@ -112,8 +110,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
       likes: 7,
       comments: 5
     },
-    {
-      post_id: 7,
+    "7": {
       category: blogCtrl.cats[3],
       tags: [
         blogCtrl.tags[3],
@@ -127,8 +124,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
       likes: 17,
       comments: 5
     },
-    {
-      post_id: 8,
+    "8": {
       category: blogCtrl.cats[0],
       tags: [
         blogCtrl.tags[0],
@@ -142,8 +138,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
       likes: 0,
       comments: 5
     },
-    {
-      post_id: 9,
+    "9": {
       category: blogCtrl.cats[2],
       tags: [
         blogCtrl.tags[1],
@@ -157,8 +152,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
       likes: 3,
       comments: 5
     },
-    {
-      post_id: 10,
+    "10": {
       category: blogCtrl.cats[3],
       tags: [
         blogCtrl.tags[2],
@@ -172,7 +166,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
       likes: 25,
       comments: 4
     }
-  ];
+  };
 
   blogCtrl.comments = [];
   
@@ -198,11 +192,12 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
 
   blogCtrl.checkNum = function (cat) {
     var num = 0;
-    for (var i = 0; i < blogCtrl.posts.length; i++) {
-      if (cat == blogCtrl.posts[i].category)
+    for (key in blogCtrl.posts) {
+      if (cat == blogCtrl.posts[key].category)
         num++;
     }
-    num = num == 0 ? blogCtrl.posts.length : num;
+    console.log(num);
+    num = num == 0 ? Object.keys(blogCtrl.posts).length : num;
     return num;
   };
   
@@ -235,7 +230,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', functio
   };
 
   blogCtrl.chooseCat = function (cat) {
-    blogCtrl.activeCat = cat == 'ALL' ? '' : cat;
+    blogCtrl.activeCat = cat;
   };
 
   blogCtrl.show = function (cat, tags) {
@@ -310,6 +305,24 @@ app.filter('customOrderBy', function () {
     if (reverse)
       return filtered.reverse();
 
+    return filtered;
+  };
+});
+
+
+app.filter('catFilter', function () {
+  return function (items, field, reverse) { 
+     var filtered = [];
+
+    angular.forEach(items, function (item) {
+      if (item.category == field)
+        filtered.push(item);
+      else if (field == "ALL") 
+        filtered.push(item);
+    });
+
+    console.log(field);
+    console.log(filtered);
     return filtered;
   };
 });
