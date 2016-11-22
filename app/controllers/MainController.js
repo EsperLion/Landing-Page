@@ -17,6 +17,9 @@ app.controller('MainController', ['$scope', '$route', '$routeParams', '$location
         $('#carousel-example-generic').carousel('cycle');
       }
     }, 1500);
+
+    //переместиться вверх на новой странице
+    document.body.scrollTop = 0;
   };
   mainCtrl.updatePath();
 
