@@ -24,6 +24,9 @@ a:link {
   text-decoration: none;
   color: #60606e; }
 
+body {
+  overflow-x: hidden; }
+
 section {
   margin-top: 150px; }
   @media screen and (max-width: 991px) {
@@ -934,7 +937,8 @@ header .logo {
   font-family: "Montserrat Bold", Arial;
   font-size: 18px;
   text-transform: uppercase;
-  color: #60606e; }
+  color: #60606e;
+  cursor: default; }
 
 header .menu-desk {
   position: relative;
