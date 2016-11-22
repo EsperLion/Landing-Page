@@ -35,7 +35,7 @@ header {
         text-transform: uppercase;
         font-family: "Montserrat", Arial;
         margin: 0 10px;
-        &:hover {
+        a:hover {
           text-shadow: 0 0 1px $font_color;
         }
       }
@@ -369,7 +369,7 @@ footer {
         text-transform: uppercase;
         font-family: "Montserrat", Arial;
         margin: 0 10px;
-        &:hover {
+        a:hover {
           text-shadow: 0 0 1px $font_color;
         }
       }
