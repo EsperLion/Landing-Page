@@ -20,22 +20,6 @@ app.controller('MainController', ['$scope', '$route', '$routeParams', '$location
   };
   mainCtrl.updatePath();
 
-  mainCtrl.openPost = function (post, comms) {
-    mainCtrl.activePost = {};
-    mainCtrl.activePost = post;
-    
-
-    mainCtrl.activeComms = [];
-    for (var i = 0; i < comms.length; i++) {
-      if (post.post_id == comms[i].post_id) {
-        mainCtrl.activeComms.push(comms[i]);
-      }
-    }
-
-    $data.savePost(mainCtrl.activePost);
-    // $data.saveComms(mainCtrl.activeComms);
-  };
-
   $scope.$watch(function () {
     return mainCtrl.lang;
   }, function (newVal, oldVal) {

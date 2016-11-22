@@ -16,4 +16,12 @@ app.service('$data', ['$http', function(){
     localStorage.setItem('postId', postId);
   };
 
+  this.getComms = function () {
+    return JSON.parse(localStorage.getItem('comms'));
+  };
+
+  this.saveComms = function (comms) {
+    localStorage.setItem('comms', JSON.stringify(comms));
+  };
+
 }]);

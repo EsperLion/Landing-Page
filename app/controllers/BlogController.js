@@ -11,7 +11,7 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', '$data'
 
   blogCtrl.activePost = $data.getPost() != null ? $data.getPost() : null;
   
-  // blogCtrl.activeComms = $data.getComms() != null ? $data.getComms() : [];
+  blogCtrl.activeComms = $data.getComms() != null ? $data.getComms() : [];
 
   blogCtrl.posts = {
     "0": {
@@ -263,6 +263,23 @@ app.controller('BlogController', ['$route', '$routeParams', '$location', '$data'
       clicked = !clicked;
     };
   })();
+
+
+  blogCtrl.openPost = function (id) {
+    blogCtrl.activePost = null;
+    blogCtrl.activePost = id;
+    
+    console.log('id = ' + id);
+    blogCtrl.activeComms = [];
+    for (var i = 0; i < blogCtrl.comments.length; i++) {
+      if (id == blogCtrl.comments[i].post_id) {
+        blogCtrl.activeComms.push(blogCtrl.comments[i]);
+      }
+    }
+    console.log('active post id' + blogCtrl.activePost)
+    $data.savePost(blogCtrl.activePost);
+    $data.saveComms(blogCtrl.activeComms);
+  };
 }]);
 
 app.filter('customOrderBy', function () {

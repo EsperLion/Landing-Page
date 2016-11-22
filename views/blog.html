@@ -110,7 +110,7 @@
           <h4>{{post.header}}</h3>
           <p>{{post.text}}</p>
           <a href="#post" 
-              data-ng-click="mainCtrl.openPost(post, blogCtrl.comments)">{{mainCtrl.content.blog.continue}}</a>
+              data-ng-click="blogCtrl.openPost($index)">{{mainCtrl.content.blog.continue}}</a>
         </div>
       </div>
     </div>

@@ -23,24 +23,24 @@
         <div class="article">
           <div class="img"></div>
           <div class="info">
-            <div class="date">{{mainCtrl.activePost.date}}</div>
+            <div class="date">{{blogCtrl.posts[blogCtrl.activePost].date}}</div>
             <div class="comments" data-ng-hide="post.comments == 0">
               <div class="icon"></div>
-              <div class="nums">{{mainCtrl.activePost.comments}}</div>
+              <div class="nums">{{blogCtrl.posts[blogCtrl.activePost].comments}}</div>
             </div>
             <div class="likes" data-ng-hide="post.likes == 0"
-                  data-ng-click="blogCtrl.likePost(post)">
+                  data-ng-click="blogCtrl.likePost(blogCtrl.posts[blogCtrl.activePost])">
               <div class="icon"></div>
-              <div class="nums" >{{mainCtrl.activePost.likes}}</div>
+              <div class="nums" >{{blogCtrl.posts[blogCtrl.activePost].likes}}</div>
             </div>
           </div>
           <div class="tags-list">
-            <div class="tag" data-ng-repeat="tag in mainCtrl.activePost.tags">
+            <div class="tag" data-ng-repeat="tag in blogCtrl.posts[blogCtrl.activePost].tags">
               {{tag}}
             </div>
           </div>
-          <h4>{{mainCtrl.activePost.header}}</h3>
-          <p>{{mainCtrl.activePost.text}}</p>
+          <h4>{{blogCtrl.posts[blogCtrl.activePost].header}}</h3>
+          <p>{{blogCtrl.posts[blogCtrl.activePost].text}}</p>
           <a href="#blog">
             <button>{{mainCtrl.content.btns.back}}</button>      
           </a>
@@ -49,10 +49,10 @@
     </div>
     <div class="row">
       <div class="col-lg-8 col-lg-offset-2">
-        <h3>{{mainCtrl.content.blog.comms}}</h3> 
+        <h3>{{blogCtrl.content.blog.comms}}</h3> 
         <div class="comms"
-              data-ng-repeat="comm in mainCtrl.activeComms">
-          <h4>{{mainCtrl.activePost.header}}</h4>
+              data-ng-repeat="comm in blogCtrl.activeComms">
+          <h4>{{blogCtrl.posts[blogCtrl.activePost].header}}</h4>
           <p>{{comm.text}}</hp>
           <p>{{comm.date}}</p>
         </div>
