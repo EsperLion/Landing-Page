@@ -18,7 +18,8 @@ app.config(['$routeProvider', '$locationProvider', function($routeProvider, $loc
       templateUrl: "views/contact.html"
     })
     .when('/post', {
-      templateUrl: "views/post.html"
+      templateUrl: "views/post.html",
+      controller: "BlogController as blogCtrl"
     })
     .otherwise('/', {
       templateUrl: "views/home.html",

@@ -5,10 +5,6 @@ app.controller('MainController', ['$scope', '$route', '$routeParams', '$location
 
   mainCtrl.route = "";
 
-  mainCtrl.activePost = $data.getPost() != null ? $data.getPost() : {};
-  
-  mainCtrl.activeComms = $data.getComms() != null ? $data.getComms() : [];
-
   mainCtrl.lang = $data.getLang() != null ? $data.getLang() : 'en';
 
   mainCtrl.content = {};
@@ -23,22 +19,6 @@ app.controller('MainController', ['$scope', '$route', '$routeParams', '$location
     }, 1500);
   };
   mainCtrl.updatePath();
-
-  mainCtrl.openPost = function (post, comms) {
-    mainCtrl.activePost = {};
-    mainCtrl.activePost = post;
-    
-
-    mainCtrl.activeComms = [];
-    for (var i = 0; i < comms.length; i++) {
-      if (post.post_id == comms[i].post_id) {
-        mainCtrl.activeComms.push(comms[i]);
-      }
-    }
-
-    $data.savePost(mainCtrl.activePost);
-    $data.saveComms(mainCtrl.activeComms);
-  };
 
   $scope.$watch(function () {
     return mainCtrl.lang;
