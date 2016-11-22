@@ -7,6 +7,10 @@ a:link {
   color: $font_color;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 section {
   margin-top: 150px;
   @include tablet {margin-top: 75px;}
