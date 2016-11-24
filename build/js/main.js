@@ -96,3 +96,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   },300);
 });
+
+function Animate (selector) {
+  this.selector = selector;
+};
