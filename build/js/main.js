@@ -4,8 +4,10 @@ document.addEventListener('scroll', function (e) {
   var hrefs = window.location.href.split('#/');
   console.log("scroll height = " + body.scrollHeight);
   console.log("scroll Top = " + body.scrollTop);
+  console.log("scroll Top = " + window.pageYOffset);
   console.log(window.innerHeight);
-  console.log(window);
+  console.log(document);
+  console.log(window.getComputedStyle(document.body));
   if (hrefs[1] == "") {
     showHome(body.scrollTop);
   } else if (hrefs[1] == "service") {
@@ -16,7 +18,6 @@ document.addEventListener('scroll', function (e) {
 
   } else if (hrefs[1] == "blog") {
     console.log('4');
-
   }
   showMenu();
   showBottom(body.scrollTop);

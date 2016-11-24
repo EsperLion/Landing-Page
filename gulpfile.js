@@ -18,7 +18,6 @@ gulp.task('compile-sass', function () {
 //watcher
 gulp.task('watch', function () {
   gulp.watch('scss/*.scss', ['compile-sass']);
-  gulp.watch('build/css/home.css', ['prefix']);
 });
 
 
