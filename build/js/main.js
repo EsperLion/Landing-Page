@@ -9,7 +9,7 @@ document.addEventListener('scroll', function (e) {
   console.log(document);
   console.log(window.getComputedStyle(document.body));
   if (hrefs[1] == "") {
-    showHome(body.scrollTop);
+    showHome(window.pageYOffset);
   } else if (hrefs[1] == "service") {
     console.log('2');
 
@@ -20,7 +20,7 @@ document.addEventListener('scroll', function (e) {
     console.log('4');
   }
   showMenu();
-  showBottom(body.scrollTop);
+  showBottom(window.pageYOffset);
 });
 
 function showMenu () {
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
   setTimeout(function () {
     showMenu ();
 
-    showHome(body.scrollTop);
+    showHome(window.pageYOffset);
 
   },300);
 });
