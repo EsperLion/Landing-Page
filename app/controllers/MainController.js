@@ -55,6 +55,7 @@ app.controller('MainController', ['$scope', '$route', '$routeParams', '$location
     e.target.parentElement.classList.add('fadeOutRight');
     document.querySelector('.form .thanks').style.zIndex = 0;
     document.querySelector('.form .thanks').classList.add('fadeInLeft');
+    // e.target.parentElement.style.display = "none";
   };
 
   mainCtrl.openForm = function (e) {
