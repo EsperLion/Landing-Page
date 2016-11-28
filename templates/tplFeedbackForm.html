@@ -3,15 +3,19 @@
     <div class="row">
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 left">
         <h3>{{mainCtrl.content.subform.cool}}</h3>
-        <button>{{mainCtrl.content.btns.intouch}}</button>
+        <button data-ng-click="mainCtrl.openForm($event)">{{mainCtrl.content.btns.intouch}}</button>
       </div>
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 right">
-        <div class="informed">
+        <div class="thanks animated">
+          <p>{{mainCtrl.content.thanks}}</p>
+          <p>{{mainCtrl.content.delivery}}</p>
+        </div>
+        <div class="informed animated">
           <h3>{{mainCtrl.content.subform.informed}}</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolore nisi fugiat sed officiis quam, doloribus, reiciendis nihil.</p>
-          <form action="">
-            <input type="text" placeholder="YOUR EMAIL">
-            <button>{{mainCtrl.content.btns.send}}</button>
+          <form data-ng-submit="mainCtrl.sendForm($event)">
+            <input type="email" placeholder="YOUR EMAIL" required>
+            <button type="submit">{{mainCtrl.content.btns.send}}</button>
           </form> 
         </div>
       </div>

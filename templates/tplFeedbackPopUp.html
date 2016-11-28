@@ -1,0 +1,30 @@
+<section class="pop-up animated">
+  <div class="cell">
+    <div class="wrap">
+      <h3>{{mainCtrl.content.contact}}</h3>
+      <div class="close" data-ng-click="mainCtrl.closeForm($event)"></div>
+      <form ng-submit="mainCtrl.closeForm($event)">
+        <div class="fields">
+          <label for="interest">{{mainCtrl.content.interest}}:</label>
+          <select name="interest" id="interest">
+            <option value="WEB">WEB</option>
+            <option value="Business">Business</option>
+            <option value="Photography">Photography</option>
+            <option value="Journal">Journal</option>
+          </select>
+          <label for="name">{{mainCtrl.content.name}}:</label>
+          <input type="text" name="name" required>
+          <label for="name">{{mainCtrl.content.email}}:</label>
+          <input type="email" name="email" required>
+          <label for="phone">{{mainCtrl.content.phone}}:</label>
+          <input type="text" name="phone">
+          <button>{{mainCtrl.content.btns.send}}</button>
+        </div>
+        <div class="area">
+          <label for="area">{{mainCtrl.content.msg}}:</label>
+          <textarea name="area" id="area" cols="32" rows="10"></textarea>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
