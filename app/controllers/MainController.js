@@ -42,5 +42,13 @@ app.controller('MainController', ['$scope', '$route', '$routeParams', '$location
         console.log(data);
       });
   });
+
+  mainCtrl.addAnim = function (e) {
+    e.target.classList.add('pulse')
+  };
+
+  mainCtrl.removeAnim = function (e) {
+    e.target.classList.remove('pulse')
+  };
   
 }]);
