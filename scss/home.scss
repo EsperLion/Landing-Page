@@ -37,6 +37,7 @@ header {
         text-transform: uppercase;
         font-family: "Montserrat", Arial;
         margin: 0 10px;
+        a {display: block;}
         a:hover {
           text-shadow: 0 0 1px $font_color;
         }
@@ -131,6 +132,7 @@ header {
 }
 
 .history {
+  position: relative;
   margin-top: 125px;
   .image {
     position: relative;

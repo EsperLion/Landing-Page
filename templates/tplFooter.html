@@ -1,16 +1,24 @@
 <footer>
   <div class="container">
     <div class="row">
-      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 animated left">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 left">
          <nav class="menu-desk">
           <ul class="items">
-            <li class="item"><a href="#/" 
+            <li class="item"><a href="#/"  class="animated"
+              data-ng-mouseover="mainCtrl.addAnim($event)"
+              data-ng-mouseleave="mainCtrl.removeAnim($event)"
               data-ng-click="mainCtrl.updatePath()">{{mainCtrl.content.menu[0]}}</a></li>
-          <li class="item"><a href="#service"
+          <li class="item"><a href="#service" class="animated"
+              data-ng-mouseover="mainCtrl.addAnim($event)"
+              data-ng-mouseleave="mainCtrl.removeAnim($event)"
               data-ng-click="mainCtrl.updatePath()">{{mainCtrl.content.menu[1]}}</a></li>
-          <li class="item"><a href="#about"
+          <li class="item"><a href="#about" class="animated"
+              data-ng-mouseover="mainCtrl.addAnim($event)"
+              data-ng-mouseleave="mainCtrl.removeAnim($event)"
               data-ng-click="mainCtrl.updatePath()">{{mainCtrl.content.menu[2]}}</a></li>
-          <li class="item"><a href="#blog"
+          <li class="item"><a href="#blog" class="animated"
+              data-ng-mouseover="mainCtrl.addAnim($event)"
+              data-ng-mouseleave="mainCtrl.removeAnim($event)"
               data-ng-click="mainCtrl.updatePath()">{{mainCtrl.content.menu[3]}}</a></li>
 <!--           <li class="item"><a href="#contact"
               data-ng-click="mainCtrl.updatePath()">contact</a></li> -->
@@ -21,7 +29,7 @@
           <option value="ru">Русский</option>
         </select>
       </div>
-      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1 animated right">
+      <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5 col-xs-offset-0 col-sm-offset-0 col-md-offset-1 col-lg-offset-1 right">
         <p>Created by akhouad 2016. All Rights Reserved</p>
         <div class="icon-wrap">
           <a href=""><div class="icon icon-1"></div></a>
