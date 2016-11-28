@@ -6,6 +6,7 @@
 @import 'about';
 @import 'blog';
 @import 'post';
+@import 'popup';
 
 header {
   .logo {
@@ -334,8 +335,8 @@ header {
         line-height: 50px;
         font-family: "Montserrat Bold", Arial;
         text-indent: 2em;
-        width:75%;
-        @include laptop {width: 65%;}
+        width:65%;
+        @include laptop {width: 55%;}
         @include tablet {width: 100%;}
       }
 
@@ -346,6 +347,28 @@ header {
           float: right;
         }
       }
+    }
+  }
+  .thanks {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    height: 280px;
+    vertical-align: middle;
+    z-index: -1;
+    p {
+      position: relative;
+      text-align: center;
+      font-family: "Montserrat Bold", Arial;
+      line-height: 50px;
+      font-size: 50px;
+      padding: 10px 0;
+      margin-top: 50px;
+    }
+    p:last-child {
+      margin-top: 0;
+      line-height: 30px;
+      font-size: 30px;
     }
   }
 }
@@ -373,6 +396,7 @@ footer {
         text-transform: uppercase;
         font-family: "Montserrat", Arial;
         margin: 0 10px;
+        a {display: block;}
         a:hover {
           text-shadow: 0 0 1px $font_color;
         }

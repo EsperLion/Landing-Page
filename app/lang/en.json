@@ -75,5 +75,13 @@
   "subform": {
     "cool": "YOU THINK WE'RE COOL? LET'S WORK TOGETHER",
     "informed": "STAY INFORMED WITH OUR NEWS-LETTER"
-  }
+  },
+  "thanks": "Thanks for submiting!",
+  "delivery": "We add your email to dilivery list.",
+  "contact": "contact us",
+  "interest": "Intereted in",
+  "name": "Name",
+  "email": "email",
+  "phone": "phone",
+  "msg": "Your message"
 }

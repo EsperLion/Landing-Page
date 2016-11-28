@@ -18,3 +18,10 @@ app.directive('footerDir', function () {
     templateUrl: 'templates/tplFooter.html'
   };
 });
+
+app.directive('popUp', function () {
+  return {
+    restrict: 'E',
+    templateUrl: 'templates/tplFeedbackPopUp.html'
+  };
+});
