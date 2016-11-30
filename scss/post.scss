@@ -12,6 +12,9 @@
       height: 500px;
       margin-bottom: 30px;
       background: #777;
+      @include laptop {height: 425px;}
+      @include tablet {height: 495px;}
+      @include mobile {height: 295px;}
     }
     .info {
       @include clearfix();

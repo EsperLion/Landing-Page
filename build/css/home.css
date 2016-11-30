@@ -863,6 +863,15 @@ h3 {
     height: 500px;
     margin-bottom: 30px;
     background: #777; }
+    @media screen and (max-width: 1199px) {
+      .post .article .img {
+        height: 425px; } }
+    @media screen and (max-width: 991px) {
+      .post .article .img {
+        height: 495px; } }
+    @media screen and (max-width: 767px) {
+      .post .article .img {
+        height: 295px; } }
   .post .article .info {
     position: relative; }
     .post .article .info:before, .post .article .info:after {
