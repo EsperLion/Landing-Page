@@ -3,3 +3,4 @@ $ cat .gitignore
 *.md
 node_modules/
 .gitignore
+.idea/
